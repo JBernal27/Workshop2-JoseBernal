@@ -44,5 +44,22 @@ function cambiarDuracion(){
 //RETO2
 
 function añadirSuvenirs(){
+    let souvenirsList = souvenirs.split(",")
+    let souvenirs = prompt("Ingrese los nombres de todos sus souvenirs separados por ,")
 
+    let souvenirsCost = prompt("Ingrese el costo de los souvenir separados por una ,")
+    let souvenirsCostList = souvenirsCost.split(",")
+    souvenirsCostList = souvenirsCostList.map(function(item){return parseInt(item)})
+
+    let souvenirsAvaliable = prompt("Ingrese '1' si esta disponible o '2' si no esta disponible")
+    let souvenirsAvaliableList = souvenirsAvaliable.split(",")
+
+    // No funciona correctamente
+    // console.group('Table');
+    // console.table(souvenirsList)
+    // console.table(souvenirsCostList)
+    // console.table(souvenirsAvaliableList)
+    // console.groupEnd();    
+
+    alert(souvenirsList + "\n" + souvenirsCostList + "\n" + souvenirsAvaliableList)
 }
