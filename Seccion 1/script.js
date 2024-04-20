@@ -44,8 +44,8 @@ function cambiarDuracion(){
 //RETO2
 
 function añadirSuvenirs(){
-    let souvenirsList = souvenirs.split(",")
     let souvenirs = prompt("Ingrese los nombres de todos sus souvenirs separados por ,")
+    let souvenirsList = souvenirs.split(",")
 
     let souvenirsCost = prompt("Ingrese el costo de los souvenir separados por una ,")
     let souvenirsCostList = souvenirsCost.split(",")
